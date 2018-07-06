@@ -6,6 +6,9 @@
   <title>Progate</title>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="css/default.css" />
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+  <script src="js/modernizr.custom.js"></script>
 </head>
 <body>
   <header>
@@ -86,5 +89,38 @@
       <p>Learn to Code, Learn to be Creative.</p>
     </div>
   </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/jquery.dlmenu.js"></script>
+<script>
+  $(function() {
+      $( '#dl-menu' ).dlmenu();
+  });
+</script>
+  <div id="dl-menu" class="dl-menuwrapper">
+    <button>Open Menu</button>
+    <ul class="dl-menu">
+        <li>
+            <a href="#">メニュー1</a>
+            <ul class="dl-submenu">
+                <li><a href="#">サブメニュー1</a></li>
+                <li><a href="#">サブメニュー2</a></li>
+                <li><a href="#">サブメニュー3</a></li>
+                <li>
+                    <a href="#">サブメニュー4</a>
+                    <ul class="dl-submenu">
+                        <li><a href="#">サブサブメニュー1</a></li>
+                        <li><a href="#">サブサブメニュー2</a></li>
+                        <li><a href="#">サブサブメニュー3</a></li>
+                    </ul>
+                </li>
+                <li><!-- ... --></li>
+                <!-- ... -->
+            </ul>
+        </li>
+        <li><!-- ... --></li>
+        <li><!-- ... --></li>
+        <!-- ... -->
+    </ul>
+</div><!-- /dl-menuwrapper -->
 </body>
 </html>
