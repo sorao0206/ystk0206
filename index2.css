@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+h1 {
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+.btn {
+  background-color: #000;
+  border-radius: 60px;
+  color: #FFF;
+  cursor: pointer;
+  font-family: "Arial Black";
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  top: 50px;
+  width: 50px;
+}
+
+.btn:hover {
+  animation: anim 0.4s 1;
+  font-size: 28px;
+  height: 100px;
+  line-height: 100px;
+  top: 25px;
+  width: 100px;
+}
+
+@keyframes anim {
+  0% {
+    font-size: 14px;
+    width: 50px;
+    line-height: 50px;
+    height: 50px;
+    top: 50px;
+  }
+
+  25% {
+    font-size: 33.6px;
+    height: 120px;
+    line-height: 120px;
+    width: 120px;
+    top: 15px;
+  }
+
+  50% {
+    font-size: 25.2px;
+    height: 90px;
+    line-height: 90px;
+    width: 90px;
+    top: 30px;
+  }
+
+  100% {
+    font-size: 28px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    top: 25px;
+  }
+
+}
